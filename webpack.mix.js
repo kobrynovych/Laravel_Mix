@@ -64,6 +64,30 @@ mix.webpackConfig({
     }
 });
 
+// mix.browserSync('my-domain.test');
+// mix.browserSync();
+// mix.browserSync('localhost');
+// mix.browserSync('localhost:8000');
+// mix.browserSync({
+//     proxy: "http://localhost:8000"
+// });
+// mix.browserSync('http://your-app.test');
+// mix.browserSync({proxy: "http://localhost:3000"});
+// mix.browserSync({
+//     server: {
+//       baseDir: '.',
+//       index: 'index.html',
+//     },
+//     port: 3000,
+//     proxy: false,
+//     files: '**/*',
+//   });
+
+mix.browserSync({
+    server: 'dist',
+    files: ['./src']
+});
+
 
 // mix.combine(
 //     [

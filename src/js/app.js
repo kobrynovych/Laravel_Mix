@@ -1,3 +1,3 @@
 import './modules/test';
 
-alert('hello world');
+// alert('hello world');  
